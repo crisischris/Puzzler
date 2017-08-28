@@ -3,7 +3,8 @@ using System.Collections;
 
 public class lightUp : MonoBehaviour {
 	public Material lightUpMaterial;
-	public GameObject gameLogic;
+    public Material lightUpMaterial2;
+    public GameObject gameLogic;
 	private Material defaultMaterial;
 
 	// Use this for initialization
@@ -24,7 +25,7 @@ public class lightUp : MonoBehaviour {
 
 
 	public void gazeLightUp() {
-		this.GetComponent<MeshRenderer>().material = lightUpMaterial; //Assign the hover material
+		this.GetComponent<MeshRenderer>().material = lightUpMaterial2; //Assign the hover material
 		//this.GetComponentInChildren<ParticleSystem>().enableEmission = true; //Turn on particle emmission
 		//this.GetComponent<GvrAudioSource>().Play();
 
